@@ -78,7 +78,6 @@ module RedminePreviewOffice
       
     end #module
   end #module
-end #module
 
 unless Redmine::Thumbnail.included_modules.include?(RedminePreviewOffice::Patches::ThumbnailPatch)
     Redmine::Thumbnail.send(:include, RedminePreviewOffice::Patches::ThumbnailPatch)
